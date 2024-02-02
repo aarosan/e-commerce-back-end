@@ -19,7 +19,7 @@ The back end of an e-commerce site using Express.js API, Sequelize, and MySQL
 - [Installation](#installation)
 - [Usage](#usage)
 - [E-Commerce Database](#ecommerce-db)
-- [Screen Recording](#screen-recording)
+- [API Route Tests](#route-tests)
 - [License](#license)
 - [Questions](#questions)
 
@@ -37,11 +37,13 @@ The back end of an e-commerce site using Express.js API, Sequelize, and MySQL
 
 <a id="ecommerce-db"></a>
 
-### E-Commerce Recording
+### E-Commerce Database
 
-<a id="screen-recording"></a>
+![E-Commerce Database](/assets/ecommerce_db.png)
 
-### Screen Recording
+<a id="route-tests"></a>
+
+### API Route Tests
 
 <a id="license"></a>
 
