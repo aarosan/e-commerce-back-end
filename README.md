@@ -19,7 +19,7 @@ The back end of an e-commerce site using Express.js API, Sequelize, and MySQL
 - [Installation](#installation)
 - [Usage](#usage)
 - [E-Commerce Database](#ecommerce-db)
-- [API Route Tests](#route-tests)
+- [Screen Recording](#screen-recording)
 - [License](#license)
 - [Questions](#questions)
 
@@ -27,9 +27,40 @@ The back end of an e-commerce site using Express.js API, Sequelize, and MySQL
 
 ### Features
 
+This application allows you to do the following:
+- Add your database name, MySQL username, and MySQL password to an environment variable file
+- Connect to a database using Sequelize
+- Enter schema and seed commands to create and seed ecommerce_db
+- Run 'npm start' to start the server and sync the Sequelize models to the MySQL database
+- Data for each GET route is displayed in a formatted JSON for categories, products, and tags
+- Data for each POST route is successfully created in the ecommerce_db for categories, products, and tags
+- Data for each PUT route is successfully updated in the ecommerce_db for categories, products, and tags
+- Data for each DELETE route is successfully deleted in the ecommerce_db for categories, products, and tags
+
 <a id="installation"></a>
 
 ### Installation
+
+1. **Clone the following repo:**
+    - ```git clone https://github.com/aaron-ross-sanchez/e-commerce-back-end.git```
+2. **Open in cloned repo in your preferred text editor**
+3. **Install node.js**
+4. **Once node.js is installed, execute the folllowing command to initialize and create a package.json:**
+    - ```npm init -y```
+5. **Navigate to the appropriate directory and execute the following command in the terminal to install all required dependencies:**
+    - ```npm i```
+6. **Check to make sure the following dependencies have been added to your package.json:**
+    - ```"dotenv": "^8.2.0"```
+    - ```"express": "^4.17.1"```
+    - ```"mysql2": "^2.1.0"```
+    - ```"sequelize": "^5.21.7"```
+7. **Create the database in MySQL:**
+    - ```source db/schema.sql```
+8. **Seed the Database:**
+    - ```npm run seed```
+9. **Start the server:**
+    - ```npm start```
+10. **Test Routes using Postman or Insomnia:**
 
 <a id="usage"></a>
 
@@ -41,9 +72,11 @@ The back end of an e-commerce site using Express.js API, Sequelize, and MySQL
 
 ![E-Commerce Database](/assets/ecommerce_db.png)
 
-<a id="route-tests"></a>
+<a id="screen-recording"></a>
 
-### API Route Tests
+### Screen Recording
+
+[![Video](https://img.youtube.com/vi/I3XVQEV84O0/0.jpg)](https://youtu.be/I3XVQEV84O0)
 
 <a id="license"></a>
 
@@ -55,7 +88,8 @@ This program uses the MIT License.
 
 ### Credits
 
-Markdown Badges: https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#badges
+- Markdown Badges: https://github.com/Ileriayo/markdown-badges?tab=readme-ov-file#badges
+- AI to help with Post and Put Routes
 
 <a id="questions"></a>
 
